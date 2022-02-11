@@ -11,3 +11,7 @@ Launch Browser
      Open Browser  url=https://demo.openemr.io/b/openemr/index.php     browser=chrome
      Maximize Browser Window
      Set Selenium Implicit Wait    30s
+
+End Browser
+    Capture Page Screenshot
+    Close Browser
