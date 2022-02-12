@@ -13,7 +13,8 @@ Test Template       Verify Invalid Credentials Template
 *** Test Cases ***
 TC1     john   john123    Dutch    Invalid username or password
 TC2     peter   peter123   Danish    Invalid username or password
-TC3     Mark    Mark123     Greek   Invalid username or password
+TC3     Mark    ${EMPTY}     Greek   Invalid username or password
+TC3     ${EMPTY}    Mark123     Greek   Invalid username or password
 
 *** Keywords ***
 Verify Invalid Credentials Template
